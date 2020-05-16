@@ -1,0 +1,29 @@
+{
+  "name": "horizons",
+  "version": "0.0.1",
+  "description": "Animal Crossing New Horizons themed component framework",
+  "main": "dist/horizons.js",
+  "repository": "https://github.com/HJBDev/horizons.git",
+  "author": "Harry (hjbdev) <30434619+HJBDev@users.noreply.github.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "cross-env": "^7.0.2",
+    "laravel-mix": "^5.0.4",
+    "resolve-url-loader": "^3.1.0",
+    "sass": "^1.26.5",
+    "sass-loader": "^8.0.2",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "scripts": {
+    "dev": "npm run development",
+    "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch": "npm run development -- --watch",
+    "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "prod": "npm run production",
+    "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+  },
+  "dependencies": {
+    "tailwindcss": "^1.4.6",
+    "vue": "^2.6.11"
+  }
+}
